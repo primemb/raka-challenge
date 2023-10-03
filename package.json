@@ -1,0 +1,7 @@
+{
+  "name": "golang-dynamo-rest",
+  "version": "1.0.0",
+  "description": "Serverless CRUD service exposing a REST HTTP interface",
+  "author": "",
+  "license": "MIT"
+}
