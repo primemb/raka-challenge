@@ -57,7 +57,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://gdcnt3n1ic.execute-api.us-east-1.amazonaws.com/dev/devices/2",
+					"raw": "https://gdcnt3n1ic.execute-api.us-east-1.amazonaws.com/dev/devices/:id",
 					"protocol": "https",
 					"host": [
 						"gdcnt3n1ic",
@@ -69,7 +69,13 @@
 					"path": [
 						"dev",
 						"devices",
-						"2"
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "2"
+						}
 					]
 				}
 			},
