@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "1973e025-ad5c-41a7-b07d-95842c145c3d",
+		"name": "Raka Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7710022"
+	},
+	"item": [
+		{
+			"name": "create device",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"2\",\r\n    \"deviceModel\": \"model Name\",\r\n    \"name\": \"Sensor\",\r\n    \"note\": \"Testing a sensor.\",\r\n    \"serial\": \"A020000102\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gdcnt3n1ic.execute-api.us-east-1.amazonaws.com/dev/devices",
+					"protocol": "https",
+					"host": [
+						"gdcnt3n1ic",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get device by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gdcnt3n1ic.execute-api.us-east-1.amazonaws.com/dev/devices/2",
+					"protocol": "https",
+					"host": [
+						"gdcnt3n1ic",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"devices",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
